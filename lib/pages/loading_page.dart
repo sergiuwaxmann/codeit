@@ -47,7 +47,7 @@ class LoadingPage extends StatelessWidget {
                     height: 15,
                   ),
                   LinearProgressIndicator(
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).colorScheme.secondary,
                     backgroundColor: Theme.of(context).scaffoldBackgroundColor,
                   ),
                 ],

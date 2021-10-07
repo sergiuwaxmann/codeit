@@ -67,7 +67,7 @@ class _PrimaryTextButtonState extends State<PrimaryTextButton> {
           color: !widget.isActive
               ? Theme.of(context).highlightColor
               : !widget.useGradient
-                  ? Theme.of(context).accentColor
+                  ? Theme.of(context).colorScheme.secondary
                   : null,
           gradient: widget.isActive && widget.useGradient
               ? const LinearGradient(
@@ -102,7 +102,7 @@ class _PrimaryTextButtonState extends State<PrimaryTextButton> {
                 fontSize: variables.buttonFontSize(),
                 color: widget.isActive
                     ? colors.getTextColorBasedOnColor(
-                        color: Theme.of(context).accentColor,
+                        color: Theme.of(context).colorScheme.secondary,
                       )
                     : null,
               ),

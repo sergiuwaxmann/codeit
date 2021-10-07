@@ -27,7 +27,9 @@ final List<AppTheme> lightThemes = [
     themeData: ThemeData(
       brightness: Brightness.light,
       scaffoldBackgroundColor: colors.classicLightPrimaryColor,
-      accentColor: colors.classicLightAccentColor,
+      colorScheme: ColorScheme.fromSwatch().copyWith(
+        secondary: colors.classicLightAccentColor,
+      ),
       primaryColor: colors.classicLightPrimaryColor,
       highlightColor: colors.classicLightHighlightColor,
       textTheme: text_themes.lightTextTheme,
@@ -38,7 +40,9 @@ final List<AppTheme> lightThemes = [
     themeData: ThemeData(
       brightness: Brightness.light,
       scaffoldBackgroundColor: colors.paleBluePrimaryColor,
-      accentColor: colors.paleBlueAccentColor,
+      colorScheme: ColorScheme.fromSwatch().copyWith(
+        secondary: colors.paleBlueAccentColor,
+      ),
       primaryColor: colors.paleBluePrimaryColor,
       highlightColor: colors.paleBlueHighlightColor,
       textTheme: text_themes.lightTextTheme,
@@ -52,7 +56,10 @@ final List<AppTheme> darkThemes = [
     themeData: ThemeData(
       brightness: Brightness.dark,
       scaffoldBackgroundColor: colors.classicDarkPrimaryColor,
-      accentColor: colors.classicDarkAccentColor,
+      colorScheme: ColorScheme.fromSwatch().copyWith(
+        brightness: Brightness.dark,
+        secondary: colors.classicDarkAccentColor,
+      ),
       primaryColor: colors.classicDarkPrimaryColor,
       highlightColor: colors.classicDarkHighlightColor,
       textTheme: text_themes.darkTextTheme,
@@ -63,7 +70,10 @@ final List<AppTheme> darkThemes = [
     themeData: ThemeData(
       brightness: Brightness.dark,
       scaffoldBackgroundColor: colors.pureBlackPrimaryColor,
-      accentColor: colors.pureBlackAccentColor,
+      colorScheme: ColorScheme.fromSwatch().copyWith(
+        brightness: Brightness.dark,
+        secondary: colors.pureBlackAccentColor,
+      ),
       primaryColor: colors.pureBlackPrimaryColor,
       highlightColor: colors.pureBlackHighlightColor,
       textTheme: text_themes.darkTextTheme,

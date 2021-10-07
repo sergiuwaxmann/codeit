@@ -1,0 +1,24 @@
+{
+    "page_not_found": "Pagina nu a fost găsită",
+
+    "loading": "Încărcare",
+
+    "home": "Acasă",
+
+    "appearance": "Aspect",
+    "select_theme_mode": "Selectează modul tematic",
+    "system": "Sistem",
+    "light": "Lumină",
+    "dark": "Întuneric",
+    "select_light_theme": "Selectează tema luminoasă",
+    "classic_light": "Clasic",
+    "pale_blue": "Albastru pal",
+    "select_dark_theme": "Selectează tema întunecată",
+    "classic_dark": "Clasic",
+    "pure_black": "OLED",
+
+    "language": "Limbă",
+    "select_language": "Selectează limba",
+    "romanian": "Română",
+    "english": "Engleză"
+}

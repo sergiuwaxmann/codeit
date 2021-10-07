@@ -1,0 +1,24 @@
+{
+    "page_not_found": "Page not found",
+
+    "loading": "Loading",
+
+    "home": "Home",
+
+    "appearance": "Appearance",
+    "select_theme_mode": "Select theme mode",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "select_light_theme": "Select light theme",
+    "classic_light": "Classic Light",
+    "pale_blue": "Pale Blue",
+    "select_dark_theme": "Select dark theme",
+    "classic_dark": "Classic Dark",
+    "pure_black": "Pure Black",
+
+    "language": "Language",
+    "select_language": "Select language",
+    "romanian": "Romanian",
+    "english": "English"
+}

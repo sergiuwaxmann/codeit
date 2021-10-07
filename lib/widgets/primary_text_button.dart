@@ -7,6 +7,7 @@ class PrimaryTextButton extends StatefulWidget {
   final String text;
   final bool isActive;
   final bool useGradient;
+  final bool useDefaultHeight;
   final bool useSmallVariables; // Small border radius and small shadow
   final Function onTap;
 
@@ -15,6 +16,7 @@ class PrimaryTextButton extends StatefulWidget {
     required this.text,
     this.isActive = false,
     this.useGradient = false,
+    this.useDefaultHeight = false,
     this.useSmallVariables = false,
     required this.onTap,
   }) : super(key: key);
@@ -58,8 +60,9 @@ class _PrimaryTextButtonState extends State<PrimaryTextButton> {
       child: AnimatedContainer(
         duration: variables.defaultDuration,
         curve: variables.defaultCurve,
-        height: variables.defaultButtonSize(),
+        height: widget.useDefaultHeight ? variables.defaultButtonSize() : null,
         padding: EdgeInsets.symmetric(
+          vertical: widget.useDefaultHeight ? 0 : 15,
           horizontal: variables.defaultMarginPadding(),
         ),
         alignment: Alignment.center,

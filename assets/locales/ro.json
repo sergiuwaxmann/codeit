@@ -3,6 +3,20 @@
 
     "loading": "Încărcare",
 
+    "login_title": "Învață programare,\ncalea ușoară",
+    "login_subtitle": "Cursuri despre instrumente și platforme\nde top din industrie",
+    "login_actions_title_1": "Autentifică-te pentru a",
+    "login_actions_title_2": "începe să înveți",
+    "email": "E-mail",
+    "email_empty": "E-mailul nu poate fi gol.",
+    "email_invalid": "E-mailul nu este valid.",
+    "password": "Parolă",
+    "password_empty": "Parola nu poate fi goală.",
+    "password_invalid": "Parola trebuie să aibă cel puțin 8 caractere.",
+    "login": "Autentificare",
+    "forgot_password": "Ai uitat parola?",
+    "register": "Înregistrare",
+
     "home": "Acasă",
 
     "appearance": "Aspect",

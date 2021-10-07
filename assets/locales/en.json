@@ -3,7 +3,22 @@
 
     "loading": "Loading",
 
+    "login_title": "Learn programming,\nthe easy way",
+    "login_subtitle": "Courses about industry leading\ntools and platforms",
+    "login_actions_title_1": "Log in to",
+    "login_actions_title_2": "start learning",
+    "email": "Email",
+    "email_empty": "Email can't be empty.",
+    "email_invalid": "Invalid email.",
+    "password": "Password",
+    "password_empty": "Password can't be empty.",
+    "password_invalid": "Password must have at least 8 characters.",
+    "login": "Log in",
+    "forgot_password": "Forgot password?",
+    "register": "Register",
+
     "home": "Home",
+    
 
     "appearance": "Appearance",
     "select_theme_mode": "Select theme mode",

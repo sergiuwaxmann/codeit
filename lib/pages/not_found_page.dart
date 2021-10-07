@@ -17,7 +17,7 @@ class NotFoundPage extends StatelessWidget {
   List<Widget> _getChildren({
     required BuildContext context,
   }) {
-    double lottieSize = .25 *
+    double lottieSize = 0.25 *
         (SizeConfig.isPortrait
             ? SizeConfig.screenHeight
             : SizeConfig.screenWidth);
@@ -89,6 +89,7 @@ class NotFoundPage extends StatelessWidget {
                 )!,
                 isActive: true,
                 useGradient: true,
+                useDefaultHeight: true,
                 onTap: () {
                   // TODO: NAVIGATE HOME
                 },

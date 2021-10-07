@@ -9,14 +9,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:codeit/data/languages.dart' as data_languages;
 import 'package:codeit/data/themes.dart' as data_themes;
 
-import 'package:codeit/pages/loading_page.dart';
-
 import 'package:codeit/providers/dark_theme_provider.dart';
 import 'package:codeit/providers/light_theme_provider.dart';
 import 'package:codeit/providers/locale_provider.dart';
 import 'package:codeit/providers/theme_mode_provider.dart';
 
 import 'package:codeit/routes/custom_router.dart';
+import 'package:codeit/routes/route_names.dart' as routes;
 
 import 'package:codeit/utilities/app_localizations.dart';
 import 'package:codeit/utilities/size_config.dart';
@@ -178,8 +177,7 @@ class CodeITApp extends StatelessWidget {
               }
             },
             onGenerateRoute: CustomRouter.allRoutes,
-            // ignore: prefer_const_constructors
-            home: LoadingPage(),
+            initialRoute: routes.loginPageRouteName,
           );
         });
       },

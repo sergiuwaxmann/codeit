@@ -1,3 +1,5 @@
 const String loadingPageRouteName = '/loading';
 
-const String homePageRouteName = '/home';
+const String loginPageRouteName = '/login';
+
+const String homePageRouteName = '/';

@@ -40,7 +40,7 @@ double buttonFontSize() {
 // Sizes
 
 double defaultButtonSize() {
-  return (!SizeConfig.isTablet ? .1 : .05) *
+  return (!SizeConfig.isTablet ? 0.1 : 0.05) *
       (SizeConfig.isPortrait
           ? SizeConfig.screenWidth
           : SizeConfig.screenHeight);
@@ -49,21 +49,21 @@ double defaultButtonSize() {
 // Margins and paddings
 
 double defaultMarginPadding() {
-  return (!SizeConfig.isTablet ? .05 : .025) *
+  return (!SizeConfig.isTablet ? 0.05 : 0.025) *
       (SizeConfig.isPortrait
           ? SizeConfig.screenWidth
           : SizeConfig.screenHeight);
 }
 
 double bigMarginPadding() {
-  return (!SizeConfig.isTablet ? .1 : .05) *
+  return (!SizeConfig.isTablet ? 0.1 : 0.05) *
       (SizeConfig.isPortrait
           ? SizeConfig.screenWidth
           : SizeConfig.screenHeight);
 }
 
 double smallMarginPadding() {
-  return .025 *
+  return 0.025 *
       (SizeConfig.isPortrait
           ? SizeConfig.screenWidth
           : SizeConfig.screenHeight);
@@ -95,9 +95,36 @@ BoxShadow topDefaultBoxShadow = BoxShadow(
   color: colors.shadowColor,
 );
 
+BoxShadow bottomDefaultBoxShadow = BoxShadow(
+  offset: const Offset(
+    0,
+    8,
+  ),
+  blurRadius: 16,
+  color: colors.shadowColor,
+);
+
 // * Big
 
 BoxShadow bigBoxShadow = BoxShadow(
+  blurRadius: 32,
+  color: colors.shadowColor,
+);
+
+BoxShadow topBigBoxShadow = BoxShadow(
+  offset: const Offset(
+    0,
+    -12,
+  ),
+  blurRadius: 32,
+  color: colors.shadowColor,
+);
+
+BoxShadow bottomBigBoxShadow = BoxShadow(
+  offset: const Offset(
+    0,
+    12,
+  ),
   blurRadius: 32,
   color: colors.shadowColor,
 );
@@ -113,6 +140,15 @@ BoxShadow topSmallBoxShadow = BoxShadow(
   offset: const Offset(
     0,
     -4,
+  ),
+  blurRadius: 8,
+  color: colors.shadowColor,
+);
+
+BoxShadow bottomSmallBoxShadow = BoxShadow(
+  offset: const Offset(
+    0,
+    4,
   ),
   blurRadius: 8,
   color: colors.shadowColor,

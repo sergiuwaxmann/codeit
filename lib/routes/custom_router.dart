@@ -1,6 +1,9 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import 'package:codeit/pages/loading_page.dart';
+import 'package:codeit/pages/login_page.dart';
 import 'package:codeit/pages/not_found_page.dart';
 
 import 'package:codeit/routes/route_names.dart';
@@ -14,7 +17,17 @@ class CustomRouter {
           builder: (
             _,
           ) =>
-              const LoadingPage(),
+              LoadingPage(),
+          fullscreenDialog: true,
+        );
+
+      case loginPageRouteName:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (
+            _,
+          ) =>
+              LoginPage(),
           fullscreenDialog: true,
         );
 
@@ -27,7 +40,7 @@ class CustomRouter {
           builder: (
             _,
           ) =>
-              const NotFoundPage(),
+              NotFoundPage(),
           fullscreenDialog: true,
         );
     }

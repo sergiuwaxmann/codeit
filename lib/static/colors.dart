@@ -25,12 +25,16 @@ const Color pureBlackPrimaryColor = Colors.black;
 Color pureBlackHighlightColor = _darkHighlightColor;
 
 // Common colors
-Color overlayColor = Colors.black.withOpacity(.25);
-Color shadowColor = Colors.black.withOpacity(.25);
+Color overlayColor = Colors.black.withOpacity(
+  0.25,
+);
+Color shadowColor = Colors.black.withOpacity(
+  0.25,
+);
 
 // Utilities
 Color getTextColorBasedOnColor({
   required Color color,
 }) {
-  return color.computeLuminance() > .5 ? Colors.black : Colors.white;
+  return color.computeLuminance() > 0.5 ? Colors.black : Colors.white;
 }

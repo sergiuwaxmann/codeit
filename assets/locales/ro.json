@@ -18,6 +18,10 @@
     "register": "Înregistrare",
 
     "home": "Acasă",
+    "courses": "Cursuri",
+    "billing": "Facturare",
+    "settings": "Setări",
+    "logout": "Deconectare",
 
     "appearance": "Aspect",
     "select_theme_mode": "Selectează modul tematic",

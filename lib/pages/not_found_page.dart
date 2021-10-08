@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'package:codeit/routes/route_names.dart' as routes;
+
 import 'package:codeit/static/variables.dart' as variables;
 
 import 'package:codeit/utilities/size_config.dart';
@@ -91,7 +93,21 @@ class NotFoundPage extends StatelessWidget {
                 useGradient: true,
                 useDefaultHeight: true,
                 onTap: () {
-                  // TODO: NAVIGATE HOME
+                  // TODO: Check if the user is logged in order to determine redirect
+                  // if (Provider.of<AuthNotifier>(
+                  //   context,
+                  //   listen: false,
+                  // ).isLoggedIn) {
+                  Navigator.pushReplacementNamed(
+                    context,
+                    routes.homePageRouteName,
+                  );
+                  // } else {
+                  //   Navigator.pushReplacementNamed(
+                  //     context,
+                  //     routes.loginPageRouteName,
+                  //   );
+                  // }
                 },
               ),
             ],

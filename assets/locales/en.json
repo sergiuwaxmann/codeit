@@ -18,7 +18,10 @@
     "register": "Register",
 
     "home": "Home",
-    
+    "courses": "Courses",
+    "billing": "Billing",
+    "settings": "Settings",
+    "logout": "Log out",
 
     "appearance": "Appearance",
     "select_theme_mode": "Select theme mode",

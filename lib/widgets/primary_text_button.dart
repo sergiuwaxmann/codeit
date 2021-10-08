@@ -91,10 +91,10 @@ class _PrimaryTextButtonState extends State<PrimaryTextButton> {
             Theme.of(context).brightness == Brightness.light
                 ? !widget.useSmallVariables
                     ? !_isButtonTapped
-                        ? variables.defaultBoxShadow
+                        ? variables.bottomDefaultBoxShadow
                         : variables.topDefaultBoxShadow
                     : !_isButtonTapped
-                        ? variables.smallBoxShadow
+                        ? variables.bottomSmallBoxShadow
                         : variables.topSmallBoxShadow
                 : const BoxShadow(),
           ],

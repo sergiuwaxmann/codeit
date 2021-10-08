@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
+import 'package:codeit/routes/route_names.dart' as routes;
+
 import 'package:codeit/static/variables.dart' as variables;
 
 import 'package:codeit/utilities/form_validator.dart';
@@ -45,6 +47,16 @@ class _LoginActionsState extends State<LoginActions> {
         email: _email,
         password: _password,
       );
+      // TODO: Check if the user is logged in before redirect
+      // if (Provider.of<AuthNotifier>(
+      //   context,
+      //   listen: false,
+      // ).isLoggedIn) {
+      Navigator.pushReplacementNamed(
+        context,
+        routes.homePageRouteName,
+      );
+      // }
     }
   }
 
@@ -52,7 +64,7 @@ class _LoginActionsState extends State<LoginActions> {
     required String email,
     required String password,
   }) async {
-    // TODO: LOGIN
+    // TODO: Log in
   }
 
   @override
@@ -237,7 +249,8 @@ class _LoginActionsState extends State<LoginActions> {
                 GestureDetector(
                   onTap: () {
                     FocusScope.of(context).unfocus();
-                    // TODO: REGISTER
+
+                    // TODO: Register Page
                   },
                   child: Text(
                     _translate(

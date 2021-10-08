@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 
+import 'package:codeit/pages/home_page.dart';
 import 'package:codeit/pages/loading_page.dart';
 import 'package:codeit/pages/login_page.dart';
 import 'package:codeit/pages/not_found_page.dart';
@@ -29,6 +30,15 @@ class CustomRouter {
           ) =>
               LoginPage(),
           fullscreenDialog: true,
+        );
+
+      case homePageRouteName:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (
+            _,
+          ) =>
+              HomePage(),
         );
 
       default:

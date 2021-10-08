@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:provider/provider.dart';
-
 import 'package:codeit/data/side_menu_items.dart';
 
 import 'package:codeit/routes/route_names.dart' as routes;

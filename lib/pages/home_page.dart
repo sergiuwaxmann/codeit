@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 
 import 'package:codeit/static/variables.dart' as variables;
 
-import 'package:codeit/utilities/size_config.dart';
-
 import 'package:codeit/widgets/custom_safe_area.dart';
 import 'package:codeit/widgets/side_menu.dart';
 

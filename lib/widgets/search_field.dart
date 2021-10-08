@@ -8,6 +8,10 @@ import 'package:codeit/static/variables.dart' as variables;
 import 'package:codeit/utilities/size_config.dart';
 
 class SearchField extends StatelessWidget {
+  const SearchField({
+    Key? key,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     double _size = variables.defaultButtonSize();

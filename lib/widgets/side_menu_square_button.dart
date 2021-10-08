@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:codeit/static/variables.dart' as variables;
 
-import 'package:codeit/utilities/size_config.dart';
-
 class SideMenuSquareButton extends StatelessWidget {
   final IconData icon;
   final Color color1, color2;

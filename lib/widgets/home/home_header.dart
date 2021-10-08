@@ -37,7 +37,7 @@ class HomeHeader extends StatelessWidget {
         HomeHeaderMenuButton(
           onTap: toggleSideMenu,
         ),
-        SearchField(),
+        const SearchField(),
         Container(
           margin: EdgeInsets.symmetric(
             horizontal: _margin,

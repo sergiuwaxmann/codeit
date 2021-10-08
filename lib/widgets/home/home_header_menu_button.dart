@@ -4,8 +4,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:codeit/static/variables.dart' as variables;
 
-import 'package:codeit/utilities/size_config.dart';
-
 class HomeHeaderMenuButton extends StatelessWidget {
   final Function onTap;
 

@@ -1,8 +1,12 @@
+const String appearancePageRouteName = '/appearance';
+
 const String billingPageRouteName = '/billing';
 
 const String coursesPageRouteName = '/courses';
 
 const String homePageRouteName = '/';
+
+const String languagePageRouteName = '/language';
 
 const String loadingPageRouteName = '/loading';
 

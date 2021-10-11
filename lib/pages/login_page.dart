@@ -23,9 +23,6 @@ class LoginPage extends StatelessWidget {
           FocusScope.of(context).unfocus();
         },
         child: Scaffold(
-          backgroundColor: Theme.of(context).brightness == Brightness.light
-              ? const Color(0xFFF1F4FB)
-              : null,
           body: Stack(
             children: [
               !_isKeyboardShown

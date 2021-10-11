@@ -9,10 +9,11 @@ import 'package:codeit/static/variables.dart' as variables;
 import 'package:codeit/utilities/size_config.dart';
 
 import 'package:codeit/widgets/custom_safe_area.dart';
-import 'package:codeit/widgets/side_menu_logout.dart';
-import 'package:codeit/widgets/side_menu_profile.dart';
-import 'package:codeit/widgets/side_menu_row.dart';
-import 'package:codeit/widgets/side_menu_vertical_sized_box.dart';
+
+import 'package:codeit/widgets/side-menu/side_menu_logout.dart';
+import 'package:codeit/widgets/side-menu/side_menu_profile.dart';
+import 'package:codeit/widgets/side-menu/side_menu_row.dart';
+import 'package:codeit/widgets/side-menu/side_menu_vertical_sized_box.dart';
 
 class SideMenuContent extends StatelessWidget {
   final Function toggleSideMenu;
@@ -45,7 +46,7 @@ class SideMenuContent extends StatelessWidget {
               onTap: () {
                 toggleSideMenu();
 
-                Navigator.pushReplacementNamed(
+                Navigator.pushNamed(
                   context,
                   routes.profilePageRouteName,
                 );
@@ -105,7 +106,7 @@ class SideMenuContent extends StatelessWidget {
               onTap: () {
                 toggleSideMenu();
 
-                Navigator.pushReplacementNamed(
+                Navigator.pushNamed(
                   context,
                   routes.settingsPageRouteName,
                 );

@@ -7,14 +7,13 @@ import 'package:codeit/routes/route_names.dart' as routes;
 
 import 'package:codeit/utilities/size_config.dart';
 
+import 'package:codeit/widgets/header_menu_button.dart';
 import 'package:codeit/widgets/search_field.dart';
 
-import 'package:codeit/widgets/home/home_header_menu_button.dart';
-
-class HomeHeader extends StatelessWidget {
+class Header extends StatelessWidget {
   final Function toggleSideMenu;
 
-  const HomeHeader({
+  const Header({
     Key? key,
     required this.toggleSideMenu,
   }) : super(key: key);
@@ -34,7 +33,7 @@ class HomeHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween, // ? Is it necessary?
       children: [
-        HomeHeaderMenuButton(
+        HeaderMenuButton(
           onTap: toggleSideMenu,
         ),
         const SearchField(),
@@ -48,7 +47,7 @@ class HomeHeader extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {
-            Navigator.pushReplacementNamed(
+            Navigator.pushNamed(
               context,
               routes.profilePageRouteName,
             );

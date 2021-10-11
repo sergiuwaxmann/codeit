@@ -2,16 +2,46 @@
 
 import 'package:flutter/material.dart';
 
+import 'package:codeit/pages/appearance_page.dart';
 import 'package:codeit/pages/home_page.dart';
+import 'package:codeit/pages/language_page.dart';
 import 'package:codeit/pages/loading_page.dart';
 import 'package:codeit/pages/login_page.dart';
 import 'package:codeit/pages/not_found_page.dart';
+import 'package:codeit/pages/settings_page.dart';
 
 import 'package:codeit/routes/route_names.dart';
 
 class CustomRouter {
   static Route<dynamic> allRoutes(RouteSettings settings) {
     switch (settings.name) {
+      case appearancePageRouteName:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (
+            _,
+          ) =>
+              AppearancePage(),
+        );
+
+      case homePageRouteName:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (
+            _,
+          ) =>
+              HomePage(),
+        );
+
+      case languagePageRouteName:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (
+            _,
+          ) =>
+              LanguagePage(),
+        );
+
       case loadingPageRouteName:
         return MaterialPageRoute(
           settings: settings,
@@ -32,13 +62,13 @@ class CustomRouter {
           fullscreenDialog: true,
         );
 
-      case homePageRouteName:
+      case settingsPageRouteName:
         return MaterialPageRoute(
           settings: settings,
           builder: (
             _,
           ) =>
-              HomePage(),
+              SettingsPage(),
         );
 
       default:

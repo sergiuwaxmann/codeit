@@ -6,7 +6,7 @@ import 'package:codeit/static/variables.dart' as variables;
 
 import 'package:codeit/utilities/size_config.dart';
 
-import 'package:codeit/widgets/side_menu_square_button.dart';
+import 'package:codeit/widgets/side-menu/side_menu_square_button.dart';
 
 class SideMenuRow extends StatelessWidget {
   final SideMenuItem sideMenuItem;

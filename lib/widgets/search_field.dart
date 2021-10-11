@@ -16,6 +16,14 @@ class SearchField extends StatelessWidget {
   Widget build(BuildContext context) {
     double _size = variables.defaultButtonSize();
 
+    String _translate({
+      required String key,
+    }) =>
+        variables.translate(
+          context,
+          key,
+        )!;
+
     return Expanded(
       child: Container(
         height: _size,
@@ -59,8 +67,12 @@ class SearchField extends StatelessWidget {
                   : Colors.white,
             ),
             hintText: !SizeConfig.isTablet && SizeConfig.isPortrait
-                ? 'Search'
-                : 'Search for courses',
+                ? _translate(
+                    key: 'search',
+                  )
+                : _translate(
+                    key: 'search_courses',
+                  ),
             border: InputBorder.none,
           ),
         ),

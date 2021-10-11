@@ -23,6 +23,11 @@
     "settings": "Settings",
     "logout": "Log out",
 
+    "search": "Search",
+    "search_courses": "Search courses",
+
+    "account": "Account",
+
     "appearance": "Appearance",
     "select_theme_mode": "Select theme mode",
     "system": "System",

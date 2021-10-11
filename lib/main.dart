@@ -26,10 +26,10 @@ void main() {
 
   SharedPreferences.getInstance().then(
     (SharedPreferences prefs) {
-      var themeMode = prefs.getInt('themeMode') ?? 0;
-      var lightTheme = prefs.getInt('lightTheme') ?? 0;
-      var darkTheme = prefs.getInt('darkTheme') ?? 0;
-      var localeName = prefs.getString('localeName');
+      var themeMode = prefs.getInt('theme_mode') ?? 0;
+      var lightTheme = prefs.getInt('light_theme') ?? 0;
+      var darkTheme = prefs.getInt('dark_theme') ?? 0;
+      var localeName = prefs.getString('locale_name');
 
       runApp(
         MultiProvider(

@@ -5,10 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:codeit/static/variables.dart' as variables;
 
 import 'package:codeit/widgets/custom_safe_area.dart';
-import 'package:codeit/widgets/side_menu.dart';
+import 'package:codeit/widgets/header.dart';
 
 import 'package:codeit/widgets/home/home_content_container.dart';
-import 'package:codeit/widgets/home/home_header.dart';
+
+import 'package:codeit/widgets/side-menu/side_menu.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({
@@ -40,7 +41,7 @@ class HomePage extends StatelessWidget {
             CustomSafeArea(
               padding: variables.defaultMarginPadding(),
               child: HomeContentContainer(
-                child: HomeHeader(
+                child: Header(
                   toggleSideMenu: () =>
                       _sideMenuStateKey.currentState!.toggleSideMenu(),
                 ),

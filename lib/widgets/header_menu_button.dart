@@ -4,10 +4,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:codeit/static/variables.dart' as variables;
 
-class HomeHeaderMenuButton extends StatelessWidget {
+class HeaderMenuButton extends StatelessWidget {
   final Function onTap;
 
-  const HomeHeaderMenuButton({
+  const HeaderMenuButton({
     Key? key,
     required this.onTap,
   }) : super(key: key);

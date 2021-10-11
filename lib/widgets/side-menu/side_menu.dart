@@ -4,7 +4,8 @@ import 'package:codeit/static/colors.dart' as colors;
 import 'package:codeit/static/variables.dart' as variables;
 
 import 'package:codeit/widgets/custom_safe_area.dart';
-import 'package:codeit/widgets/side_menu_content.dart';
+
+import 'package:codeit/widgets/side-menu/side_menu_content.dart';
 
 class SideMenu extends StatefulWidget {
   const SideMenu({

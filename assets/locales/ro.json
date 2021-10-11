@@ -23,6 +23,11 @@
     "settings": "Setări",
     "logout": "Deconectare",
 
+    "search": "Caută",
+    "search_courses": "Caută cursuri",
+
+    "account": "Cont",
+
     "appearance": "Aspect",
     "select_theme_mode": "Selectează modul tematic",
     "system": "Sistem",

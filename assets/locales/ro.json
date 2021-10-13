@@ -26,6 +26,11 @@
     "search": "Caută",
     "search_courses": "Caută cursuri",
 
+    "recent_courses": "Cursuri recente",
+    "recent_courses_description": "3 cursuri noi",
+    "explore_courses": "Explorează cursuri",
+    "sections": "secțiuni",
+
     "continue_watching": "Continuă să urmărești",
     "certificates": "Certificate",
 
@@ -50,7 +55,7 @@
 
     "flutter_from_scratch": "Flutter de la zero",
     "prototyping_with_figma": "Prototipare cu Figma",
-    "build_an_app_with_swiftui": "Construiește o aplicație cu SwiftUI",
+    "build_an_app_with_swiftui": "Creează o aplicație cu SwiftUI",
 
     "css_layout_and_animations": "Layout și animații CSS",
     "react_native_for_beginners": "React Native pentru începători",
@@ -62,7 +67,7 @@
     "multiple_scrolling": "Derulare multiplă",
 
     "swift_advanced": "Swift avansat",
-    "build_an_arkit_2_app": "Construiește o aplicație cu ARKit 2",
+    "build_an_arkit_2_app": "Creează o aplicație cu ARKit 2",
 
     "completed": "Finalizat",
 

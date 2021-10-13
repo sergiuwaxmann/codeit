@@ -227,14 +227,8 @@ class _LoginActionsState extends State<LoginActions> {
                 GestureDetector(
                   onTap: () {
                     FocusScope.of(context).unfocus();
-                    // ignore: avoid_print
-                    print(
-                      "Email: waxmann.sergiu@me.com",
-                    );
-                    // ignore: avoid_print
-                    print(
-                      "Password: CodeIT22",
-                    );
+
+                    // TODO: Forgot password
                   },
                   child: Text(
                     _translate(

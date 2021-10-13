@@ -26,6 +26,9 @@
     "search": "Search",
     "search_courses": "Search courses",
 
+    "continue_watching": "Continue watching",
+    "certificates": "Certificates",
+
     "account": "Account",
 
     "appearance": "Appearance",
@@ -42,6 +45,30 @@
 
     "language": "Language",
     "select_language": "Select language",
+    "english": "English",
     "romanian": "Romanian",
-    "english": "English"
+
+    "flutter_from_scratch": "Flutter from scratch",
+    "prototyping_with_figma": "Prototyping with Figma",
+    "build_an_app_with_swiftui": "Build an app with SwiftUI",
+
+    "css_layout_and_animations": "CSS layout and animations",
+    "react_native_for_beginners": "React Native for beginners",
+
+    "unity_for_beginners": "Unity for beginners",
+    "player_movement": "Player movement",
+
+    "animating_in_principle": "Animating in Principle",
+    "multiple_scrolling": "Multiple scrolling",
+
+    "swift_advanced": "Swift advanced",
+    "build_an_arkit_2_app": "Build an ARKit 2 app",
+
+    "completed": "Completed",
+
+    "introduction_to_flutter_and_dart": "Introduction to Flutter & Dart",
+    "the_first_widget": "The first widget",
+    "full_screen_widget": "Full screen widget",
+    "card_widget_explained": "Card widget explained",
+    "classes_in_dart": "Classes in Dart"
 }

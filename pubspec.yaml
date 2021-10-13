@@ -35,6 +35,7 @@ dependencies:
   lottie: ^1.2.1
   provider: ^6.0.1
   shared_preferences: ^2.0.8
+  sliding_up_panel: ^2.0.0+1
 
 dev_dependencies:
   flutter_test:
@@ -68,10 +69,13 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/backgrounds/
+    - assets/badges/
+    - assets/certificates/
     - assets/icons/
     - assets/illustrations/
     - assets/images/
     - assets/locales/
+    - assets/logos/
     - assets/lotties/
 
   # An image asset can refer to one or more resolution-specific "variants", see

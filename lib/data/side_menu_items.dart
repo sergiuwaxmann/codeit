@@ -5,7 +5,7 @@ import 'package:flutter/cupertino.dart';
 
 import 'package:codeit/models/side_menu_item.dart';
 
-var sideMenuItems = [
+final List<SideMenuItem> sideMenuItems = [
   SideMenuItem(
     titleKey: 'home',
     icon: Platform.isIOS ? CupertinoIcons.house_fill : Icons.home_rounded,

@@ -7,6 +7,7 @@ import 'package:codeit/static/variables.dart' as variables;
 import 'package:codeit/widgets/custom_safe_area.dart';
 import 'package:codeit/widgets/header.dart';
 
+import 'package:codeit/widgets/home/continue_watching_panel.dart';
 import 'package:codeit/widgets/home/home_content_container.dart';
 
 import 'package:codeit/widgets/side-menu/side_menu.dart';
@@ -30,7 +31,6 @@ class HomePage extends StatelessWidget {
             _sideMenuStateKey.currentState!.toggleSideMenu();
           }
         }
-
         return Future.value(
           false,
         );
@@ -47,6 +47,8 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+            // ignore: prefer_const_constructors
+            ContinueWatchingPanel(),
             SideMenu(
               key: _sideMenuStateKey,
             ),

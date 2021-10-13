@@ -26,6 +26,9 @@
     "search": "Caută",
     "search_courses": "Caută cursuri",
 
+    "continue_watching": "Continuă să urmărești",
+    "certificates": "Certificate",
+
     "account": "Cont",
 
     "appearance": "Aspect",
@@ -42,6 +45,30 @@
 
     "language": "Limbă",
     "select_language": "Selectează limba",
+    "english": "Engleză",
     "romanian": "Română",
-    "english": "Engleză"
+
+    "flutter_from_scratch": "Flutter de la zero",
+    "prototyping_with_figma": "Prototipare cu Figma",
+    "build_an_app_with_swiftui": "Construiește o aplicație cu SwiftUI",
+
+    "css_layout_and_animations": "Layout și animații CSS",
+    "react_native_for_beginners": "React Native pentru începători",
+
+    "unity_for_beginners": "Unity pentru începători",
+    "player_movement": "Mișcarea jucătorului",
+
+    "animating_in_principle": "Animare în Principle",
+    "multiple_scrolling": "Derulare multiplă",
+
+    "swift_advanced": "Swift avansat",
+    "build_an_arkit_2_app": "Construiește o aplicație cu ARKit 2",
+
+    "completed": "Finalizat",
+
+    "introduction_to_flutter_and_dart": "Introducere în Flutter & Dart",
+    "the_first_widget": "Primul widget",
+    "full_screen_widget": "Widget pentru ecran complet",
+    "card_widget_explained": "Card widget explicat",
+    "classes_in_dart": "Clase în Dart"
 }

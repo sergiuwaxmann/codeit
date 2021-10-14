@@ -77,7 +77,9 @@ class _SettingsPageState extends State<SettingsPage> {
                     },
                   );
                 },
-                child: const PageHeader(
+                child:
+                    // ignore: prefer_const_constructors
+                    PageHeader(
                   titleKey: 'settings',
                 ),
               ),

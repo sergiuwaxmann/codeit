@@ -265,7 +265,9 @@ class _AppearancePageState extends State<AppearancePage> {
                     },
                   );
                 },
-                child: const PageHeader(
+                child:
+                    // ignore: prefer_const_constructors
+                    PageHeader(
                   titleKey: 'appearance',
                 ),
               ),

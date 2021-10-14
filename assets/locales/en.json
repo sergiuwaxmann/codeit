@@ -34,6 +34,17 @@
     "continue_watching": "Continue watching",
     "certificates": "Certificates",
 
+    "students": "Students",
+    "comments": "Comments",
+
+    "view_sections": "View sections",
+
+    "course_sections": "Course sections",
+    "section": "Section",
+    "end_sections_1": "No more ",
+    "end_sections_2": "sections",
+    "end_sections_3": " to view.",
+
     "account": "Account",
 
     "appearance": "Appearance",

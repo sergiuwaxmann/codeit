@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 
 import 'package:codeit/static/variables.dart' as variables;
 
-import 'package:codeit/utilities/size_config.dart';
-
 class LoginTextField extends StatelessWidget {
   final TextInputType textInputType;
   final TextInputAction textInputAction;
@@ -56,7 +54,7 @@ class LoginTextField extends StatelessWidget {
           hintText: hint,
           border: InputBorder.none,
           errorStyle: Theme.of(context).textTheme.bodyText2!.copyWith(
-                fontSize: 1.5 * SizeConfig.textMultiplier,
+                fontSize: variables.bodyText1FontSize(),
                 color: Colors.red.withOpacity(
                   0.8,
                 ),

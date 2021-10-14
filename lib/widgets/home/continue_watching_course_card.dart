@@ -6,7 +6,7 @@ import 'package:codeit/static/variables.dart' as variables;
 
 import 'package:codeit/utilities/size_config.dart';
 
-import 'package:codeit/widgets/home/course_logo.dart';
+import 'package:codeit/widgets/course_logo.dart';
 
 class ContinueWatchingCourseCard extends StatelessWidget {
   final Course course;
@@ -167,7 +167,8 @@ class ContinueWatchingCourseCard extends StatelessWidget {
               ),
             ),
           ),
-          const CourseLogo(
+          // ignore: prefer_const_constructors
+          CourseLogo(
             course: null,
           ),
         ],

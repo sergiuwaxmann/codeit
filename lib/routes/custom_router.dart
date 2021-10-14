@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:codeit/pages/appearance_page.dart';
+import 'package:codeit/pages/course_page.dart';
 import 'package:codeit/pages/home_page.dart';
 import 'package:codeit/pages/language_page.dart';
 import 'package:codeit/pages/loading_page.dart';
@@ -22,6 +23,19 @@ class CustomRouter {
             _,
           ) =>
               AppearancePage(),
+        );
+
+      case coursesPageRouteName:
+        final arguments = settings.arguments as Map<String, dynamic>;
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (
+            _,
+          ) =>
+              CoursePage(
+            course: arguments['course'],
+          ),
+          fullscreenDialog: true,
         );
 
       case homePageRouteName:

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import 'package:sliding_up_panel/sliding_up_panel.dart';
@@ -42,6 +44,7 @@ class _ContinueWatchingPanelState extends State<ContinueWatchingPanel> {
         )!;
 
     return SlidingUpPanel(
+      color: Theme.of(context).highlightColor,
       backdropEnabled: true,
       backdropColor: colors.overlayColor,
       borderRadius: BorderRadius.only(
@@ -49,7 +52,6 @@ class _ContinueWatchingPanelState extends State<ContinueWatchingPanel> {
           variables.bigBorderRadius,
         ),
       ),
-      color: Theme.of(context).highlightColor,
       boxShadow: [
         Theme.of(context).brightness == Brightness.light
             ? variables.topBigBoxShadow
@@ -72,8 +74,8 @@ class _ContinueWatchingPanelState extends State<ContinueWatchingPanel> {
       ),
       panel: SafeArea(
         top: false,
-        child: Container(
-          margin: EdgeInsets.symmetric(
+        child: Padding(
+          padding: EdgeInsets.symmetric(
             horizontal: 0.05 *
                 (SizeConfig.isPortrait
                     ? SizeConfig.screenWidth
@@ -120,10 +122,10 @@ class _ContinueWatchingPanelState extends State<ContinueWatchingPanel> {
                 ),
               ),
               !SizeConfig.isPortrait ? const Spacer() : const SizedBox.shrink(),
-              const ContinueWatchingCourses(),
+              ContinueWatchingCourses(),
               !SizeConfig.isTablet && SizeConfig.isPortrait
-                  ? Container(
-                      margin: const EdgeInsets.only(
+                  ? Padding(
+                      padding: const EdgeInsets.only(
                         top: 30,
                       ),
                       child: Text(
@@ -137,7 +139,7 @@ class _ContinueWatchingPanelState extends State<ContinueWatchingPanel> {
                     )
                   : const SizedBox.shrink(),
               !SizeConfig.isTablet && SizeConfig.isPortrait
-                  ? const Expanded(
+                  ? Expanded(
                       child: CertificatesViewer(),
                     )
                   : const SizedBox.shrink(),

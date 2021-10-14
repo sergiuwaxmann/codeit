@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:codeit/data/courses.dart' as data_courses;
 
+import 'package:codeit/routes/route_names.dart' as routes;
+
 import 'package:codeit/utilities/size_config.dart';
 
 import 'package:codeit/widgets/home/explore_course_card.dart';
@@ -33,13 +35,19 @@ class ExploreCourses extends StatelessWidget {
           context,
           index,
         ) {
-          return Container(
-            margin: EdgeInsets.only(
+          return Padding(
+            padding: EdgeInsets.only(
               right: index != data_courses.exploreCourses.length - 1 ? 20 : 0,
             ),
             child: GestureDetector(
               onTap: () {
-                // TODO: Course Page
+                Navigator.pushNamed(
+                  context,
+                  routes.coursesPageRouteName,
+                  arguments: {
+                    'course': data_courses.exploreCourses[index],
+                  },
+                );
               },
               child: ExploreCourseCard(
                 course: data_courses.exploreCourses[index],

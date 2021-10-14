@@ -6,7 +6,7 @@ import 'package:codeit/static/variables.dart' as variables;
 
 import 'package:codeit/utilities/size_config.dart';
 
-import 'package:codeit/widgets/home/course_logo.dart';
+import 'package:codeit/widgets/course_logo.dart';
 
 class RecentCourseCard extends StatelessWidget {
   final Course course;

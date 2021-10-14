@@ -162,7 +162,9 @@ class _LanguagePageState extends State<LanguagePage> {
                     },
                   );
                 },
-                child: const PageHeader(
+                child:
+                    // ignore: prefer_const_constructors
+                    PageHeader(
                   titleKey: 'language',
                 ),
               ),

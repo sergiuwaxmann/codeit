@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import 'package:codeit/data/side_menu_items.dart';
@@ -71,7 +73,7 @@ class SideMenuContent extends StatelessWidget {
                 }
               },
             ),
-            const SideMenuVerticalSizedBox(),
+            SideMenuVerticalSizedBox(),
             SideMenuRow(
               sideMenuItem: sideMenuItems[1],
               onTap: () {
@@ -86,7 +88,7 @@ class SideMenuContent extends StatelessWidget {
                 }
               },
             ),
-            const SideMenuVerticalSizedBox(),
+            SideMenuVerticalSizedBox(),
             SideMenuRow(
               sideMenuItem: sideMenuItems[2],
               onTap: () {
@@ -100,7 +102,7 @@ class SideMenuContent extends StatelessWidget {
                 );
               },
             ),
-            const SideMenuVerticalSizedBox(),
+            SideMenuVerticalSizedBox(),
             SideMenuRow(
               sideMenuItem: sideMenuItems[3],
               onTap: () {

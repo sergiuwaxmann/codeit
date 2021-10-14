@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CertificatesViewer extends StatefulWidget {
-  const CertificatesViewer({Key? key}) : super(key: key);
+  const CertificatesViewer({
+    Key? key,
+  }) : super(key: key);
 
   @override
   _CertificatesViewerState createState() => _CertificatesViewerState();
@@ -60,8 +62,8 @@ class _CertificatesViewerState extends State<CertificatesViewer> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(
+    return Padding(
+      padding: const EdgeInsets.only(
         top: 15,
       ),
       child: _certificatesViewer,

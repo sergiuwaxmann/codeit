@@ -12,8 +12,8 @@ class HomeContentContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(
+    return Padding(
+      padding: EdgeInsets.only(
         bottom: 0.05 * SizeConfig.screenHeight,
       ),
       child: child,

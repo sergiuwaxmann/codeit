@@ -160,7 +160,7 @@ class _LoginActionsState extends State<LoginActions> {
                       ) =>
                           _email = value!.trim(),
                     ),
-                    Container(
+                    Padding(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 20,
                       ),

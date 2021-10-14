@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:codeit/data/courses.dart' as data_courses;
 
+import 'package:codeit/routes/route_names.dart' as routes;
+
 import 'package:codeit/static/variables.dart' as variables;
 
 import 'package:codeit/utilities/custom_scroll_physics.dart';
@@ -73,7 +75,13 @@ class _ContinueWatchingCoursesState extends State<ContinueWatchingCourses> {
         return Center(
           child: GestureDetector(
             onTap: () {
-              // TODO: Course Page
+              Navigator.pushNamed(
+                context,
+                routes.coursesPageRouteName,
+                arguments: {
+                  'course': data_courses.continueWatchingCourses[index],
+                },
+              );
             },
             child: Opacity(
               opacity: _currentPage == index ? 1 : 0.8,
@@ -117,15 +125,21 @@ class _ContinueWatchingCoursesState extends State<ContinueWatchingCourses> {
         context,
         index,
       ) {
-        return Container(
-          margin: EdgeInsets.only(
+        return Padding(
+          padding: EdgeInsets.only(
             right: index != data_courses.continueWatchingCourses.length - 1
                 ? 40
                 : 0,
           ),
           child: GestureDetector(
             onTap: () {
-              // TODO: Course Page
+              Navigator.pushNamed(
+                context,
+                routes.coursesPageRouteName,
+                arguments: {
+                  'course': data_courses.continueWatchingCourses[index],
+                },
+              );
             },
             child: ContinueWatchingCourseCard(
               course: data_courses.continueWatchingCourses[index],
@@ -156,8 +170,8 @@ class _ContinueWatchingCoursesState extends State<ContinueWatchingCourses> {
           height: _height,
           child: !SizeConfig.isTablet && SizeConfig.isPortrait
               ? _buildPageView()
-              : Container(
-                  margin: const EdgeInsets.only(
+              : Padding(
+                  padding: const EdgeInsets.only(
                     top: 15,
                   ),
                   child: _buildListView(
@@ -166,8 +180,8 @@ class _ContinueWatchingCoursesState extends State<ContinueWatchingCourses> {
                 ),
         ),
         !SizeConfig.isTablet && SizeConfig.isPortrait
-            ? Container(
-                margin: const EdgeInsets.only(
+            ? Padding(
+                padding: const EdgeInsets.only(
                   top: 15,
                 ),
                 child: Row(

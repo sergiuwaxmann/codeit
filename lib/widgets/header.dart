@@ -36,9 +36,10 @@ class Header extends StatelessWidget {
         HeaderMenuButton(
           onTap: toggleSideMenu,
         ),
-        const SearchField(),
-        Container(
-          margin: EdgeInsets.symmetric(
+        // ignore: prefer_const_constructors
+        SearchField(),
+        Padding(
+          padding: EdgeInsets.symmetric(
             horizontal: _margin,
           ),
           child: Icon(

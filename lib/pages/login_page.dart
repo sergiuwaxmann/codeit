@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import 'package:codeit/utilities/size_config.dart';
@@ -26,18 +28,16 @@ class LoginPage extends StatelessWidget {
           body: Stack(
             children: [
               !_isKeyboardShown
-                  ?
-                  // ignore: prefer_const_constructors
-                  BackgroundSvg(
+                  ? BackgroundSvg(
                       svg: 'assets/backgrounds/background-login.svg',
                     )
                   : const SizedBox.shrink(),
               SizeConfig.isPortrait && !_isKeyboardShown
-                  ? const LoginHeadline()
+                  ? LoginHeadline()
                   : const SizedBox.shrink(),
               SizeConfig.isPortrait
-                  ? const LoginActions()
-                  : const Center(
+                  ? LoginActions()
+                  : Center(
                       child: SingleChildScrollView(
                         child: LoginActions(),
                       ),

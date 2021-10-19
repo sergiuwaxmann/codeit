@@ -60,7 +60,9 @@ class ExploreCourseCard extends StatelessWidget {
         ],
       ),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(SizeConfig.isPortrait ? 40 : 30),
+        borderRadius: BorderRadius.circular(
+          SizeConfig.isPortrait ? 40 : 30,
+        ),
         child: Container(
           width: _calculateWidth(),
           decoration: BoxDecoration(

@@ -9,7 +9,7 @@ import 'package:codeit/models/settings_item.dart';
 
 final List<SettingsItem> settingsItems = [
   SettingsItem(
-    routeName: routes.profilePageRouteName,
+    routeName: routes.accountPageRouteName,
     titleKey: 'account',
     icon: Platform.isIOS ? CupertinoIcons.person_fill : Icons.person_rounded,
   ),

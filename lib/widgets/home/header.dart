@@ -7,8 +7,8 @@ import 'package:codeit/routes/route_names.dart' as routes;
 
 import 'package:codeit/utilities/size_config.dart';
 
-import 'package:codeit/widgets/header_menu_button.dart';
-import 'package:codeit/widgets/search_field.dart';
+import 'package:codeit/widgets/home/header_menu_button.dart';
+import 'package:codeit/widgets/home/search_field.dart';
 
 class Header extends StatelessWidget {
   final Function toggleSideMenu;

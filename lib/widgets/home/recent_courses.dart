@@ -76,7 +76,7 @@ class _RecentCoursesState extends State<RecentCourses> {
             onTap: () {
               Navigator.pushNamed(
                 context,
-                routes.coursesPageRouteName,
+                routes.coursePageRouteName,
                 arguments: {
                   'course': data_courses.recentCourses[index],
                 },
@@ -109,7 +109,9 @@ class _RecentCoursesState extends State<RecentCourses> {
     );
   }
 
-  ListView _buildListView({itemDimension}) {
+  ListView _buildListView({
+    required double itemDimension,
+  }) {
     return ListView.builder(
       clipBehavior: Clip.none,
       scrollDirection: Axis.horizontal,
@@ -129,7 +131,7 @@ class _RecentCoursesState extends State<RecentCourses> {
             onTap: () {
               Navigator.pushNamed(
                 context,
-                routes.coursesPageRouteName,
+                routes.coursePageRouteName,
                 arguments: {
                   'course': data_courses.recentCourses[index],
                 },

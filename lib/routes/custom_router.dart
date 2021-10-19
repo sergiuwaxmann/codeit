@@ -9,6 +9,7 @@ import 'package:codeit/pages/language_page.dart';
 import 'package:codeit/pages/loading_page.dart';
 import 'package:codeit/pages/login_page.dart';
 import 'package:codeit/pages/not_found_page.dart';
+import 'package:codeit/pages/profile_page.dart';
 import 'package:codeit/pages/settings_page.dart';
 
 import 'package:codeit/routes/route_names.dart';
@@ -25,10 +26,13 @@ class CustomRouter {
               AppearancePage(),
         );
 
-      case coursesPageRouteName:
+      case coursePageRouteName:
         final arguments = settings.arguments as Map<String, dynamic>;
         return MaterialPageRoute(
-          settings: settings,
+          settings: RouteSettings(
+            name: '$coursePageRouteName/${arguments['course'].titleKey}',
+            arguments: settings.arguments,
+          ),
           builder: (
             _,
           ) =>
@@ -74,6 +78,15 @@ class CustomRouter {
           ) =>
               LoginPage(),
           fullscreenDialog: true,
+        );
+
+      case profilePageRouteName:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (
+            _,
+          ) =>
+              ProfilePage(),
         );
 
       case settingsPageRouteName:

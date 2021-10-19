@@ -9,11 +9,11 @@ import 'package:codeit/static/variables.dart' as variables;
 import 'package:codeit/utilities/size_config.dart';
 
 import 'package:codeit/widgets/custom_safe_area.dart';
-import 'package:codeit/widgets/header.dart';
 
 import 'package:codeit/widgets/home/continue_watching_panel.dart';
 import 'package:codeit/widgets/home/explore_courses.dart';
 import 'package:codeit/widgets/home/explore_courses_headline.dart';
+import 'package:codeit/widgets/home/header.dart';
 import 'package:codeit/widgets/home/home_content_container.dart';
 import 'package:codeit/widgets/home/recent_courses.dart';
 import 'package:codeit/widgets/home/recent_courses_headline.dart';

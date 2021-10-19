@@ -9,7 +9,8 @@ import 'package:codeit/static/colors.dart' as colors;
 
 import 'package:codeit/utilities/size_config.dart';
 
-import 'package:codeit/widgets/home/certificates_viewer.dart';
+import 'package:codeit/widgets/certificates_viewer.dart';
+
 import 'package:codeit/widgets/home/continue_watching_courses.dart';
 
 class ContinueWatchingPanel extends StatefulWidget {

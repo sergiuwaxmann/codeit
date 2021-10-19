@@ -77,7 +77,7 @@ class _ContinueWatchingCoursesState extends State<ContinueWatchingCourses> {
             onTap: () {
               Navigator.pushNamed(
                 context,
-                routes.coursesPageRouteName,
+                routes.coursePageRouteName,
                 arguments: {
                   'course': data_courses.continueWatchingCourses[index],
                 },
@@ -135,7 +135,7 @@ class _ContinueWatchingCoursesState extends State<ContinueWatchingCourses> {
             onTap: () {
               Navigator.pushNamed(
                 context,
-                routes.coursesPageRouteName,
+                routes.coursePageRouteName,
                 arguments: {
                   'course': data_courses.continueWatchingCourses[index],
                 },

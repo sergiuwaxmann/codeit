@@ -18,7 +18,9 @@ TextStyle bodyLight1 = TextStyle(
 );
 
 TextStyle bodyLight2 = bodyLight1.copyWith(
-  color: Colors.black.withOpacity(0.8),
+  color: Colors.black.withOpacity(
+    0.8,
+  ),
 );
 
 // Dark
@@ -32,5 +34,7 @@ TextStyle bodyDark1 = bodyLight1.copyWith(
 );
 
 TextStyle bodyDark2 = bodyDark1.copyWith(
-  color: Colors.white.withOpacity(0.8),
+  color: Colors.white.withOpacity(
+    0.8,
+  ),
 );

@@ -74,8 +74,9 @@ class ContinueWatchingCourseCard extends StatelessWidget {
                     course.bgColor2,
                   ],
                 ),
-                borderRadius:
-                    BorderRadius.circular(SizeConfig.isPortrait ? 40 : 30),
+                borderRadius: BorderRadius.circular(
+                  SizeConfig.isPortrait ? 40 : 30,
+                ),
                 boxShadow: [
                   isActive
                       ? BoxShadow(

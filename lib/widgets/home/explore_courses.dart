@@ -43,7 +43,7 @@ class ExploreCourses extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(
                   context,
-                  routes.coursesPageRouteName,
+                  routes.coursePageRouteName,
                   arguments: {
                     'course': data_courses.exploreCourses[index],
                   },

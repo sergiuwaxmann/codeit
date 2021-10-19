@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:codeit/static/variables.dart' as variables;
 
-class ViewAllButton extends StatelessWidget {
+class ViewSectionsButton extends StatelessWidget {
   final Function onTap;
 
-  const ViewAllButton({
+  const ViewSectionsButton({
     Key? key,
     required this.onTap,
   }) : super(key: key);
@@ -21,7 +21,7 @@ class ViewAllButton extends StatelessWidget {
           horizontal: variables.defaultMarginPadding(),
         ),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Theme.of(context).highlightColor,
           borderRadius: BorderRadius.circular(
             variables.defaultBorderRadius,
           ),
@@ -38,7 +38,6 @@ class ViewAllButton extends StatelessWidget {
           )!,
           style: Theme.of(context).textTheme.bodyText1!.copyWith(
                 fontSize: variables.buttonFontSize(),
-                color: Colors.black,
               ),
         ),
       ),

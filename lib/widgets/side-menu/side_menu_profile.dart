@@ -33,7 +33,6 @@ class SideMenuProfile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  // TODO: Use the user's name
                   'Sergiu Waxmann',
                   style: Theme.of(context).textTheme.headline1!.copyWith(
                         fontSize: variables.headline2FontSize(),
@@ -48,7 +47,6 @@ class SideMenuProfile extends StatelessWidget {
                     : const SizedBox.shrink(),
                 SizeConfig.isPortrait
                     ? Text(
-                        // TODO: Use the user's subscription expiration time
                         'License ends on 01 Jan, 2022',
                         style: Theme.of(context).textTheme.bodyText2!.copyWith(
                               fontSize: variables.bodyText2FontSize(),

@@ -19,7 +19,7 @@ import 'package:codeit/widgets/course/course_navigation.dart';
 import 'package:codeit/widgets/course/course_sections_panel_content.dart';
 import 'package:codeit/widgets/course/course_stats.dart';
 import 'package:codeit/widgets/course/course_text_content.dart';
-import 'package:codeit/widgets/course/view_all_button.dart';
+import 'package:codeit/widgets/course/view_sections_button.dart';
 
 class CoursePage extends StatefulWidget {
   final Course course;
@@ -127,7 +127,7 @@ class _CoursePageState extends State<CoursePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             CourseNavigation(),
-                            ViewAllButton(
+                            ViewSectionsButton(
                               onTap: () => _panelController.open(),
                             ),
                           ],

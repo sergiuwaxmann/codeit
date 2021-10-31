@@ -16,6 +16,8 @@ const String loadingPageRouteName = '/loading';
 
 const String loginPageRouteName = '/login';
 
+const String playerPageRouteName = '/player';
+
 const String profilePageRouteName = '/profile';
 
 const String registerPageRouteName = '/register';

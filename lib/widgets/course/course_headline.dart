@@ -8,9 +8,9 @@ import 'package:codeit/static/variables.dart' as variables;
 
 import 'package:codeit/utilities/size_config.dart';
 
+import 'package:codeit/widgets/close_square_button.dart';
 import 'package:codeit/widgets/course_logo.dart';
 
-import 'package:codeit/widgets/course/close_square_button.dart';
 import 'package:codeit/widgets/course/play_square_button.dart';
 
 class CourseHeadline extends StatelessWidget {

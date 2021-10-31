@@ -229,15 +229,6 @@ class _LoginActionsState extends State<LoginActions> {
                     FocusScope.of(context).unfocus();
 
                     // TODO: Forgot password
-
-                    // ignore: avoid_print
-                    print(
-                      "Email: waxmann.sergiu@me.com",
-                    );
-                    // ignore: avoid_print
-                    print(
-                      "Password: CodeIT22",
-                    );
                   },
                   child: Text(
                     _translate(

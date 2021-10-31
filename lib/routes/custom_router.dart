@@ -9,6 +9,7 @@ import 'package:codeit/pages/language_page.dart';
 import 'package:codeit/pages/loading_page.dart';
 import 'package:codeit/pages/login_page.dart';
 import 'package:codeit/pages/not_found_page.dart';
+import 'package:codeit/pages/player_page.dart';
 import 'package:codeit/pages/profile_page.dart';
 import 'package:codeit/pages/settings_page.dart';
 
@@ -77,6 +78,21 @@ class CustomRouter {
             _,
           ) =>
               LoginPage(),
+          fullscreenDialog: true,
+        );
+
+      case playerPageRouteName:
+        final arguments = settings.arguments as Map<String, dynamic>;
+        return MaterialPageRoute(
+          settings: RouteSettings(
+            arguments: settings.arguments,
+          ),
+          builder: (
+            _,
+          ) =>
+              PlayerPage(
+            videoPlayerController: arguments['videoPlayerController'],
+          ),
           fullscreenDialog: true,
         );
 

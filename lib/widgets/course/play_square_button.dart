@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:video_player/video_player.dart';
+
+import 'package:codeit/routes/route_names.dart' as routes;
 
 import 'package:codeit/static/variables.dart' as variables;
 
@@ -26,8 +29,19 @@ class PlaySquareButton extends StatelessWidget {
     double _size = _calculateSize();
 
     return GestureDetector(
-      onTap: () {
-        // TODO: Player Page
+      onTap: () async {
+        VideoPlayerController videoPlayerController =
+            VideoPlayerController.network(
+          'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        );
+        await videoPlayerController.initialize();
+        Navigator.pushNamed(
+          context,
+          routes.playerPageRouteName,
+          arguments: {
+            'videoPlayerController': videoPlayerController,
+          },
+        );
       },
       child: Container(
         width: _size,
